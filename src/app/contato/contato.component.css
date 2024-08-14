@@ -1,0 +1,119 @@
+.conteudo-contato h1{
+    color: white;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.conteudo-contato p {
+    color: white;
+    white-space: pre-line;
+    word-wrap: break-word;
+}
+
+.form-nome, .form-email, .form-mensagem {
+    color: #616161;
+    font-weight: bold;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+input, textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid #616161;
+    box-shadow: none;
+    margin-top: 5px;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+}
+
+label {
+    display: inline-block;
+    transition: transform .3s ease-out;
+    transform-origin: top left;
+}
+
+.separacao-introducao hr{
+    border-top: 2px solid #8b8b8b;
+    margin: 20px;
+    width: 100%;
+}
+
+.botao-envio {
+    color: white;
+   border-color: #505050;
+}
+
+.custom-snackbar-sucesso {
+  background-color: green !important;; /* Define a cor de fundo do snackbar */
+  color: white; /* Define a cor do texto */
+}
+  
+.custom-snackbar-falha {
+  background-color: red !important;; /* Define a cor de fundo do snackbar para falhas */
+  color: white; /* Define a cor do texto */
+}  
+
+/* Colocar o icone de carregamento */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Garanta que o overlay fique sobre outros conteúdos */
+}
+
+.icone-carregando {
+  border: 16px solid #f3f3f3; /* Cor da base do spinner */
+  border-top: 16px solid #3498db; /* Cor da parte giratória */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .conteudo-contato h1 {
+    text-align: center;
+  }
+
+
+  .conteudo-contato p {
+    text-align: center;
+  }
+
+  .form-nome,
+  .form-email,
+  .form-mensagem {
+    margin-bottom: 20px;
+  }
+
+  input,
+  textarea {
+    font-size: 0.9em;
+  }
+
+  textarea {
+    height: auto;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,54 @@
+.nome-portfolio {
+    color: white;
+    margin: 0; 
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.redes-sociais-cabecalho {
+    color: white;
+    display: flex;
+    list-style-type: none;
+    padding: 0; 
+    margin: 0;
+    justify-content: flex-end; 
+}
+
+.redes-sociais-cabecalho li {
+    margin-right: 15px; 
+}
+
+
+.redes-sociais-cabecalho i:hover {
+    background-color: white;
+    border-radius: 50%; 
+    padding: 5px; 
+    color: black; 
+}
+
+.redes-sociais-cabecalho a {
+    color: inherit; 
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    .row {
+        text-align: center; /* Centraliza o texto e o conteúdo */
+    }
+
+    .col-md-6 {
+        display: flex;
+        justify-content: center; /* Centraliza o conteúdo dentro da coluna */
+        align-items: center; /* Alinha verticalmente o conteúdo */
+    }
+
+    .nome-portfolio{
+        margin-bottom: 20px;
+    }
+
+    .redes-sociais-cabecalho {
+        justify-content: center; /* Centraliza as redes sociais na tela */
+        margin-bottom: 20px;
+    }
+}

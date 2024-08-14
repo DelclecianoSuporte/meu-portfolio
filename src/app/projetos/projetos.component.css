@@ -1,0 +1,69 @@
+.sublinhar-nome {
+    border-bottom: 4px solid #4de39c;
+}
+
+.siga-contato{
+    color: white;
+}
+
+.titulo-projeto{
+    color: white;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.card {
+    margin-top: 40px;
+}
+
+.body-personalizado{
+    background-color: #151515;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-personalizado{
+    color: white;
+    line-height: 24px;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.ul-personalizado {
+    margin-top: 10px; /* Ajuste o espaço entre o h3 e a lista */
+    padding-left: 0;  /* Remove qualquer padding padrão da lista */
+    list-style: none; /* Remove as bolinhas da lista */
+}
+
+.li-personalizado{
+    color: #a4a4a4;
+    display: inline-block;
+    margin-right: 10px;
+    font-style: normal;
+    line-height: 24px;
+}
+
+.espacamento-entre-rows{
+    margin-bottom: 20px;
+}
+
+.separacao-introducao{
+    border-top: 2px solid #8b8b8b;
+    margin: 20px;
+    width: 100%;
+}
+
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+    .titulo-projeto{
+        text-align: center;
+    }
+
+    .siga-contato{
+        text-align: center;
+    }
+}

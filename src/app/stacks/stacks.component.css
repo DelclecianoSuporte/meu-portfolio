@@ -1,0 +1,43 @@
+.tec p{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tec span {
+    color: #a4a4a4;
+    font-size: 14px;
+}
+
+.titulo-stack{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.separacao-stacks hr{
+    border-top: 2px solid white;
+    margin: 20px;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+
+    .row{
+        margin-top: 20px;
+    }
+
+    .titulo-stack{
+        text-align: center;
+    }
+
+    .tec p{
+        color: white;
+        font-size: 14px;
+    }
+    
+    .tec span {
+        color: #a4a4a4;
+        font-size: 12px;
+    }
+}
