@@ -14,7 +14,7 @@
     margin-bottom: 20px;
 }
 
-.separacao-stacks hr{
+.separacao-introducao hr{
     border-top: 2px solid white;
     margin: 20px;
     width: 100%;
@@ -31,13 +31,21 @@
         text-align: center;
     }
 
+    .tec {
+        margin-bottom: 20px;
+    }
+
     .tec p{
         color: white;
-        font-size: 14px;
+        font-size: 12px;
     }
     
     .tec span {
         color: #a4a4a4;
-        font-size: 12px;
+        font-size: 10px;
+    }
+    
+    .separacao-introducao{
+        display: none;
     }
 }

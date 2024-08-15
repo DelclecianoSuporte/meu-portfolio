@@ -92,9 +92,9 @@ label {
     text-align: center;
   }
 
-
   .conteudo-contato p {
     text-align: center;
+    font-size: 12px;
   }
 
   .formulario{
@@ -121,5 +121,9 @@ label {
 
   .btn {
     width: 100%;
+  }
+  
+  .separacao-introducao{
+    width: 0px;
   }
 }
