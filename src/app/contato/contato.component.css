@@ -97,6 +97,10 @@ label {
     text-align: center;
   }
 
+  .formulario{
+    margin-left: 20px;
+  }
+
   .form-nome,
   .form-email,
   .form-mensagem {
@@ -106,6 +110,9 @@ label {
   input,
   textarea {
     font-size: 0.9em;
+    width: 100%; 
+    padding: 10px;
+    box-sizing: border-box;
   }
 
   textarea {
@@ -114,6 +121,5 @@ label {
 
   .btn {
     width: 100%;
-    text-align: center;
   }
 }
