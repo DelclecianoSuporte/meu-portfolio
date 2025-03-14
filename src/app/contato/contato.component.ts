@@ -40,7 +40,7 @@ export class ContatoComponent {
               duration: 2000,
               verticalPosition: 'top',
               horizontalPosition: 'center',
-              panelClass: 'custom-snackbar-sucesso' // Use a classe correta sem espaços
+              panelClass: 'custom-snackbar-sucesso' 
             });
             this.contatoFormulario.reset();
           },
@@ -49,12 +49,12 @@ export class ContatoComponent {
               duration: 2000,
               verticalPosition: 'top',
               horizontalPosition: 'center',
-              panelClass: 'custom-snackbar-falha' // Use a classe correta sem espaços
+              panelClass: 'custom-snackbar-falha' 
             });
             this.contatoFormulario.reset();
           },
           complete: () => {
-            this.isLoading = false; // Ocultar o carregamento após a resposta
+            this.isLoading = false; 
           }
         }
       )

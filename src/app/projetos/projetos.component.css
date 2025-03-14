@@ -34,9 +34,9 @@
 }
 
 .ul-personalizado {
-    margin-top: 10px; /* Ajuste o espaço entre o h3 e a lista */
-    padding-left: 0;  /* Remove qualquer padding padrão da lista */
-    list-style: none; /* Remove as bolinhas da lista */
+    margin-top: 10px; 
+    padding-left: 0;  
+    list-style: none; 
 }
 
 .li-personalizado{
@@ -58,7 +58,6 @@
 }
 
 
-/* Media Query para telas menores */
 @media (max-width: 768px) {
     .titulo-projeto{
         text-align: center;

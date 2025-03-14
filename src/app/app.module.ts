@@ -10,24 +10,19 @@ import { CommonModule } from '@angular/common';
 import { provideHttpClient } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CabecalhoComponent,
-    SobreComponent,
-    StacksComponent,
-    ProjetosComponent,
-    ContatoComponent
-  ],
   imports: [
+    RouterModule,  
     BrowserModule,
     CommonModule, 
     MatSnackBarModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule 
   ],
   providers: [provideHttpClient()],
-  bootstrap: [AppComponent]
 })
 
 export class AppModule { }
