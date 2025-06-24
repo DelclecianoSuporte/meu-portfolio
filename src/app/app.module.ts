@@ -5,7 +5,6 @@ import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { StacksComponent } from './stacks/stacks.component';
 import { ProjetosComponent } from './projetos/projetos.component';
-import { ContatoComponent } from './contato/contato.component';
 import { CommonModule } from '@angular/common';
 import { provideHttpClient } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';

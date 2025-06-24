@@ -12,8 +12,8 @@ export class ProjetosComponent {
 
   constructor(private viewportScroller: ViewportScroller) {}
 
-  vaiProComponenteContato() {
-    this.viewportScroller.scrollToAnchor('contato');
-  }
+  // vaiProComponenteContato() {
+  //   this.viewportScroller.scrollToAnchor('contato');
+  // }
 
 }

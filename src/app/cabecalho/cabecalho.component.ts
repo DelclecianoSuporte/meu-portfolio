@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class CabecalhoComponent {
 
+  anoAtual: number = new Date().getFullYear();
 }

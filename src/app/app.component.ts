@@ -3,7 +3,6 @@ import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { StacksComponent } from './stacks/stacks.component';
 import { ProjetosComponent } from './projetos/projetos.component';
-import { ContatoComponent } from './contato/contato.component';
 
 @Component({
   selector: 'app-root',
@@ -12,8 +11,7 @@ import { ContatoComponent } from './contato/contato.component';
     CabecalhoComponent,  
     SobreComponent,      
     StacksComponent,    
-    ProjetosComponent,   
-    ContatoComponent    
+    ProjetosComponent    
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
