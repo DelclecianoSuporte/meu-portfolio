@@ -12,8 +12,4 @@ export class SobreComponent{
 
   constructor(private viewportScroller: ViewportScroller) {}
 
-  // vaiProComponenteContato() {
-  //   this.viewportScroller.scrollToAnchor('contato');
-  // }
-
 }
