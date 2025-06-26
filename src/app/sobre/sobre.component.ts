@@ -1,4 +1,3 @@
-import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -9,7 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './sobre.component.css'
 })
 export class SobreComponent{
-
-  constructor(private viewportScroller: ViewportScroller) {}
 
 }
