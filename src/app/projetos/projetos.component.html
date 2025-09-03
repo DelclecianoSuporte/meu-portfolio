@@ -10,18 +10,17 @@
         <div class="col-md-6 col-12" *ngFor="let projeto of projetos">
             <a [href]="projeto.link" target="_blank" style="text-decoration: none; color: inherit;">
                 <div class="card">
-                <img [src]="projeto.imagem" [alt]="'Imagem de ' + projeto.titulo" class="cad-img-top imagem-quadrada">
-                <div class="card-body body-personalizado">
-                    <h3 class="texto-personalizado">{{ projeto.titulo }}</h3>
-                    <ul class="ul-personalizado">
-                    <li class="li-personalizado" *ngFor="let tec of projeto.tecnologias">{{ tec }}</li>
-                    </ul>
-                </div>
+                    <img [src]="projeto.imagem" [alt]="'Imagem de ' + projeto.titulo" class="cad-img-top imagem-quadrada">
+                    <div class="card-body body-personalizado">
+                        <h3 class="texto-personalizado">{{ projeto.titulo }}</h3>
+                        <ul class="ul-personalizado">
+                        <li class="li-personalizado" *ngFor="let tec of projeto.tecnologias">{{ tec }}</li>
+                        </ul>
+                    </div>
                 </div>
             </a>
         </div>
     </div>
-
 </div>
 
 <div class="separacao-introducao">

@@ -20,7 +20,7 @@ export class ProjetosComponent {
     {
       titulo: 'Api Usuários',
       tecnologias: ['C#', '.NET'],
-      imagem: 'imagens/ApiUsuarios.jpg',
+      imagem: 'imagens/ApiUsuarios1.jpg',
       link: 'https://github.com/DelclecianoSuporte/Usuarios'
     },
     {
@@ -72,5 +72,4 @@ export class ProjetosComponent {
       link: 'https://github.com/DelclecianoSuporte/GerenciadorApi'
     },
   ]
-
 }

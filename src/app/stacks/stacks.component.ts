@@ -49,9 +49,6 @@ export class StacksComponent {
     [
       { nome: 'Protheus ERP', experiencia: '3 meses de experiência' },
       { nome: 'Consinco ERP', experiencia: '2 anos de experiência' },
-      { nome: 'Kubernets', experiencia: 'Aprendendo no momento' }
     ]
   ];
-
-
 }

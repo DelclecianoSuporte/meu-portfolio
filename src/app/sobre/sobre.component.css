@@ -33,6 +33,19 @@
     border-bottom: 4px solid #4de39c;
 }
 
+.sublinhar-email {
+    border-bottom: 4px solid #4de39c;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.sublinhar-email:hover {
+  color: #00ffcc; 
+  text-decoration: none;
+  transition: all 0.3s ease; 
+}
+
 .introducao-contato span{
     color: white;
 }
@@ -46,7 +59,6 @@
     justify-content: flex-end;
     align-items: flex-end;
 }
-
 
 .introducao-2 img{
     max-width: 50%;
@@ -65,7 +77,6 @@
     width: 100%;
 }
 
-/* Media Query para telas menores */
 @media (max-width: 768px) {
     .introducao-container {
       align-items: center;
@@ -83,7 +94,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 20px; /* Ajusta a margem se necessário */
+      margin-top: 20px;
     }
   
     .introducao-contato {
