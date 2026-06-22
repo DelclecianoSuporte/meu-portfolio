@@ -10,45 +10,34 @@ import { Component } from '@angular/core';
 })
 export class StacksComponent {
 
-   tecnologias: { nome: string; experiencia: string }[][] = [
-    [
-      { nome: 'HTML', experiencia: '4 anos de experiência' },
-      { nome: 'CSS', experiencia: '4 anos de experiência' },
-      { nome: 'Javascript', experiencia: '4 anos de experiência' }
-    ],
-    [
-      { nome: 'TypeScript', experiencia: '1 ano de experiência' },
-      { nome: 'Angular', experiencia: '1 ano de experiência' },
-      { nome: 'React', experiencia: '1 ano de experiência' }
-    ],
-    [
-      { nome: 'C#', experiencia: '1 ano de experiência' },
-      { nome: '.Net', experiencia: '1 ano de experiência' },
-      { nome: 'Java', experiencia: '3 anos de experiência' }
-    ],
-    [
-      { nome: 'Jquery', experiencia: '3 anos de experiência' },
-      { nome: 'Bootstrap', experiencia: '3 anos de experiência' },
-      { nome: 'Rest', experiencia: '3 anos de experiência' }
-    ],
-    [
-      { nome: 'Node', experiencia: '1 ano de experiência' },
-      { nome: 'Soap', experiencia: '3 anos de experiência' },
-      { nome: 'Fluig', experiencia: '2 anos de experiência' }
-    ],
-    [
-      { nome: 'SQL Server', experiencia: '1 ano de experiência' },
-      { nome: 'Mysql', experiencia: '1 ano de experiência' },
-      { nome: 'Git', experiencia: '2 anos de experiência' }
-    ],
-    [
-      { nome: 'PHP', experiencia: '1 ano de experiência' },
-      { nome: 'Tailwind', experiencia: '3 meses de experiência' },
-      { nome: 'Entity', experiencia: '1 ano de experiência' }
-    ],
-    [
-      { nome: 'Protheus ERP', experiencia: '3 meses de experiência' },
-      { nome: 'Consinco ERP', experiencia: '2 anos de experiência' },
-    ]
+  tecnologias: { nome: string; icone?: string }[] = [
+    { nome: 'HTML', icone: 'devicon-html5-plain colored' },
+    { nome: 'CSS', icone: 'devicon-css3-plain colored' },
+    { nome: 'Javascript', icone: 'devicon-javascript-plain colored' },
+    { nome: 'TypeScript', icone: 'devicon-typescript-plain colored' },
+    { nome: 'Angular', icone: 'devicon-angularjs-plain colored' },
+    { nome: 'React', icone: 'devicon-react-original colored' },
+    { nome: 'C#', icone: 'devicon-csharp-plain colored' },
+    { nome: '.Net', icone: 'devicon-dot-net-plain colored' },
+    { nome: 'Java', icone: 'devicon-java-plain colored' },
+    { nome: 'Spring Boot', icone: 'devicon-spring-plain colored' },
+    { nome: 'Jquery', icone: 'devicon-jquery-plain colored' },
+    { nome: 'Bootstrap', icone: 'devicon-bootstrap-plain colored' },
+    { nome: 'Rest', icone: 'ti ti-api' },
+    { nome: 'Node', icone: 'devicon-nodejs-plain colored' },
+    { nome: 'Soap', icone: 'ti ti-exchange' },
+    { nome: 'Fluig', icone: 'ti ti-building' },
+    { nome: 'SQL Server', icone: 'devicon-microsoftsqlserver-plain colored' },
+    { nome: 'Mysql', icone: 'devicon-mysql-plain colored' },
+    { nome: 'Postgres', icone: 'devicon-postgresql-plain colored' },
+    { nome: 'Git', icone: 'devicon-git-plain colored' },
+    { nome: 'PHP', icone: 'devicon-php-plain colored' },
+    { nome: 'Python', icone: 'devicon-python-plain colored' },
+    { nome: 'Tailwind', icone: 'devicon-tailwindcss-plain colored' },
+    { nome: 'Entity', icone: 'ti ti-database' },
+    { nome: 'Docker', icone: 'devicon-docker-plain colored' },
+    { nome: 'AWS', icone: 'devicon-amazonwebservices-plain-wordmark colored' },
+    { nome: 'Protheus ERP' },
+    { nome: 'Consinco ERP' }
   ];
 }

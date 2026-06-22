@@ -2,18 +2,24 @@
     margin-top: 20px;
 }
 
-.introducao-container
-{
+/* ===== Coluna de texto ===== */
+
+.introducao-container {
     text-align: center;
 }
 
-.introducao-inicial-1{
-    color: white;
-    font-size: 20px;
-    line-height: 20px;
+.introducao-eyebrow {
+    display: inline-block;
+    color: #4de39c;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
-.introducao-inicial-2{
+.introducao-inicial-1,
+.introducao-inicial-2 {
     color: white;
     font-size: 20px;
     line-height: 20px;
@@ -22,48 +28,82 @@
 .introducao-sobre {
     color: white;
     text-align: justify;
-    max-width: 100%;
-    margin: 0 auto;
+    max-width: 700px;
+    margin: 0 auto 20px;
     white-space: pre-line;
     font-size: 16px;
-    margin-bottom: 25px;
 }
 
 .sublinhar-nome {
     border-bottom: 4px solid #4de39c;
 }
 
-.sublinhar-email {
-    border-bottom: 4px solid #4de39c;
+/* ===== Botão de contato ===== */
+
+.btn-contato {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    padding: 12px 28px;
+    border: 2px solid #4de39c;
+    border-radius: 30px;
+    color: #ffffff;
     text-decoration: none;
-    color: white;
-    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
-.sublinhar-email:hover {
-  color: #00ffcc; 
-  text-decoration: none;
-  transition: all 0.3s ease; 
+.btn-contato:hover {
+    background: #4de39c;
+    color: #0a0a0a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(77, 227, 156, 0.3);
 }
 
-.introducao-contato span{
-    color: white;
-}
-
-.introducao-contato {
-    margin-bottom: 20px;
-}
+/* ===== Foto com blob ===== */
 
 .introducao-2 {
+    position: relative;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    min-height: 220px;
 }
 
-.introducao-2 img{
-    max-width: 50%;
-    height: auto;
+.foto-blob {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background: linear-gradient(135deg, rgba(77, 227, 156, 0.4), rgba(77, 227, 156, 0.05));
+    border-radius: 48% 52% 65% 35% / 55% 45% 55% 45%;
+    filter: blur(8px);
+    z-index: 0;
+    animation: blob-move 8s ease-in-out infinite alternate;
+}
+
+@keyframes blob-move {
+    0% {
+        border-radius: 48% 52% 65% 35% / 55% 45% 55% 45%;
+        transform: scale(1) rotate(0deg);
+    }
+    100% {
+        border-radius: 60% 40% 40% 60% / 40% 60% 40% 60%;
+        transform: scale(1.08) rotate(8deg);
+    }
+}
+
+.introducao-2 img {
+    position: relative;
+    z-index: 1;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
     border-radius: 50%;
+    border: 4px solid rgba(77, 227, 156, 0.6);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     transition: transform 1s ease;
 }
 
@@ -71,40 +111,83 @@
     transform: scaleX(-1);
 }
 
-.separacao-introducao hr{
+/* ===== Faixa de estatísticas ===== */
+
+.stats-faixa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 30px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    flex: 1;
+    min-width: 120px;
+}
+
+.stat-numero {
+    font-size: 26px;
+    font-weight: 700;
+    color: #4de39c;
+}
+
+.stat-label {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+.stat-divisor {
+    width: 1px;
+    align-self: stretch;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.separacao-introducao hr {
     border-top: 2px solid white;
     margin: 20px;
     width: 100%;
 }
 
+/* ===== Responsivo (mobile) ===== */
+
 @media (max-width: 768px) {
-    .introducao-container {
-      align-items: center;
-      text-align: center;
+    .introducao-2 img {
+        width: 150px;
+        height: 150px;
     }
 
-    .introducao-sobre {
-        text-align: justify;
-        white-space: pre-line;
-        word-wrap: break-word;
-        margin-bottom: 25px;
+    .stats-faixa {
+        justify-content: center;
     }
-  
-    .introducao-2 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 20px;
+
+    .stat-divisor {
+        display: none;
     }
-  
-    .introducao-contato {
-      text-align: center;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      font-size: 16px;
+
+    .stat-item {
+        flex: 1 1 45%;
     }
 
     .separacao-introducao {
         display: none;
+    }
+}
+
+/* Respeita preferência de movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+    .foto-blob {
+        animation: none;
     }
 }

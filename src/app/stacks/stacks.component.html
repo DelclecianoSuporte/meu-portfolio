@@ -1,18 +1,18 @@
 <div class="container">
-    <div class="row titulo-stack">
-        <div class="col-md-12">
-            <h1>Stacks</h1>
-        </div>
+  <div class="row titulo-stack">
+    <div class="col-12">
+      <h1>Stacks</h1>
     </div>
+  </div>
 
-    <div *ngFor="let linha of tecnologias" class="row mb-3">
-        <div *ngFor="let item of linha" class="col-md-4 col-4 tec">
-        <p>{{ item.nome }}</p>
-        <span>{{ item.experiencia }}</span>
-        </div>
+  <div class="stacks-grid">
+    <div *ngFor="let item of tecnologias" class="tec">
+      <i *ngIf="item.icone" [class]="item.icone + ' tec-icone'"></i>
+      <p>{{ item.nome }}</p>
     </div>
+  </div>
 </div>
 
 <div class="separacao-introducao">
-    <hr>
+  <hr>
 </div>
