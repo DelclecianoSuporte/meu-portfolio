@@ -1,53 +1,156 @@
-.nome-portfolio {
-    color: white;
-    margin: 0; 
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.redes-sociais-cabecalho {
-    color: white;
+.cabecalho {
     display: flex;
-    list-style-type: none;
-    padding: 0; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+}
+
+.menu-desktop {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+}
+
+.menu-cabecalho,
+.redes-sociais {
+    display: flex;
+    list-style: none;
     margin: 0;
-    justify-content: flex-end; 
+    padding: 0;
 }
 
-.redes-sociais-cabecalho li {
-    margin-right: 15px; 
+.menu-cabecalho {
+    gap: 35px;
 }
 
-.redes-sociais-cabecalho i:hover {
-    background-color: white;
-    border-radius: 50%; 
-    padding: 5px; 
-    color: black; 
+.redes-sociais {
+    gap: 25px;
 }
 
-.redes-sociais-cabecalho a {
-    color: inherit; 
+.menu-mobile-btn {
+    display: none;
+}
+
+.logo,
+.logo p {
+    color: white;
+}
+
+.menu-cabecalho a {
+    color: white;
     text-decoration: none;
 }
 
+.redes-sociais a,
+.redes-mobile a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-cabecalho a:hover {
+    color: white; 
+    border-bottom: 2px solid #4de39c; 
+    padding-bottom: 4px;
+}
+
+.menu-mobile > a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    border-top: 1px solid #222;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+.menu-mobile > a::after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #4de39c;
+    transition: width 0.2s ease;
+}
+
+.menu-mobile > a:hover::after,
+.menu-mobile > a:active::after { 
+    width: 40px;
+}
+
+.redes-sociais a i, 
+.redes-mobile a i {
+    padding: 5px; 
+    border-radius: 50%; 
+    background-color: transparent; 
+    color: white; 
+    transition: all 0.2s ease; 
+}
+
+.redes-sociais a i:hover, 
+.redes-mobile a i:hover {
+    background-color: white;
+    color: black;
+}
 
 @media (max-width: 768px) {
-    .row {
-        text-align: center;
+
+    .menu-desktop {
+        display: none;
     }
 
-    .col-md-6 {
+    .menu-mobile-btn {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .cabecalho {
+        padding: 20px;
+    }
+
+    .cabecalho.estilo-rodape {
+        justify-content: center; 
+        padding: 30px 20px;
+    }
+
+    .menu-mobile {
+        background: #111;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
     }
 
-    .nome-portfolio{
-        margin-bottom: 20px;
+    .menu-mobile > a {
+        display: block; 
+        width: 100%;   
+        text-align: center;
+        padding: 20px;
+        color: white;
+        text-decoration: none;
+        border-top: 1px solid #444; 
+        box-sizing: border-box;
+        position: relative;
+        transition: color 0.2s ease;
     }
 
-    .redes-sociais-cabecalho {
+   .redes-mobile {
+        display: flex;
         justify-content: center;
-        margin-bottom: 20px;
+        gap: 30px;
+        padding: 15px 20px 25px 20px; 
+        border-top: 1px solid #444; 
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .menu-mobile > a:first-of-type {
+        border-top: none;
     }
 }

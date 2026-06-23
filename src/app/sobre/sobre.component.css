@@ -2,8 +2,6 @@
     margin-top: 20px;
 }
 
-/* ===== Coluna de texto ===== */
-
 .introducao-container {
     text-align: center;
 }
@@ -38,8 +36,6 @@
     border-bottom: 4px solid #4de39c;
 }
 
-/* ===== Botão de contato ===== */
-
 .btn-contato {
     display: inline-flex;
     align-items: center;
@@ -62,8 +58,6 @@
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(77, 227, 156, 0.3);
 }
-
-/* ===== Foto com blob ===== */
 
 .introducao-2 {
     position: relative;
@@ -110,8 +104,6 @@
 .introducao-2 img:hover {
     transform: scaleX(-1);
 }
-
-/* ===== Faixa de estatísticas ===== */
 
 .stats-faixa {
     display: flex;
@@ -160,7 +152,7 @@
     width: 100%;
 }
 
-/* ===== Responsivo (mobile) ===== */
+/* Mobile */
 
 @media (max-width: 768px) {
     .introducao-2 img {
@@ -185,7 +177,6 @@
     }
 }
 
-/* Respeita preferência de movimento reduzido */
 @media (prefers-reduced-motion: reduce) {
     .foto-blob {
         animation: none;

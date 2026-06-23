@@ -1,14 +1,37 @@
-<div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <p class="nome-portfolio">© {{ anoAtual }} - Delcleciano</p>
-      </div>
-      <div class="col-md-6">
-        <ul class="redes-sociais-cabecalho">
-          <li><a href="https://github.com/DelclecianoSuporte?tab=repositories" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/delcleciano-j%C3%BAnior-173297149/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="https://www.facebook.com/delcleciano.juniors" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a></li>
-        </ul>
-      </div>
-    </div>
+<header class="cabecalho" [ngClass]="{ 'estilo-rodape': rodape }">
+
+  <div class="logo">
+    © {{ anoAtual }} - Delcleciano
+  </div>
+
+  <button *ngIf="!rodape" class="menu-mobile-btn" (click)="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <div class="menu-desktop">
+    <ul class="menu-cabecalho">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#stacks">Stacks</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+    </ul>
+
+    <ul class="redes-sociais">
+      <li><a href="#"><i class="fab fa-github"></i></a></li>
+      <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+    </ul>
+  </div>
+
+</header>
+
+<div class="menu-mobile" *ngIf="menuAberto && !rodape">
+  <a href="#sobre">Sobre</a>
+  <a href="#stacks">Stacks</a>
+  <a href="#projetos">Projetos</a>
+
+  <div class="redes-mobile">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+  </div>
 </div>
