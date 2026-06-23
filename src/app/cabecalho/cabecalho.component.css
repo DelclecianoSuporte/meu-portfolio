@@ -92,8 +92,8 @@
 
 .redes-sociais a i:hover, 
 .redes-mobile a i:hover {
-    background-color: white;
-    color: black;
+    background-color: #4de39c;
+    color: white;
 }
 
 @media (max-width: 768px) {
