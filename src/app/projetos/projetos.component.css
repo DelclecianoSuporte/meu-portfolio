@@ -72,6 +72,7 @@
     font-size: 14px;
     font-weight: 600;
     transition: .3s;
+    cursor: default;
 }
 
 .li-personalizado:hover{
