@@ -40,7 +40,7 @@
     font-style: normal;
 }
 
-.ul-personalizado {
+/* .ul-personalizado {
     margin-top: 10px; 
     padding-left: 0;  
     list-style: none; 
@@ -52,6 +52,31 @@
     margin-right: 10px;
     font-style: normal;
     line-height: 24px;
+} */
+
+.ul-personalizado {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+    margin-top: 15px;
+    list-style: none;
+}
+
+.li-personalizado {
+    background: #202020;
+    color: #4de39c;
+    border: 1px solid #4de39c;
+    border-radius: 3px;
+    padding: 6px 14px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.li-personalizado:hover{
+    background-color: #4de39c;
+    color: white;
 }
 
 .espacamento-entre-rows{

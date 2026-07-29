@@ -24,10 +24,10 @@ export class ProjetosComponent {
       link: 'https://github.com/DelclecianoSuporte/Usuarios'
     },
     {
-      titulo: 'Pokedex Pokémons',
-      tecnologias: ['HTML', 'CSS', 'Angular'],
-      imagem: 'imagens/pokedex.jpg',
-      link: 'https://github.com/DelclecianoSuporte/angular-pokedex'
+      titulo: 'Teste Comportamental',
+      tecnologias: ['HTML', 'CSS', 'React'],
+      imagem: 'imagens/teste-arquetipo.jpg',
+      link: 'https://github.com/DelclecianoSuporte/arquetipos-app'
     },
     {
       titulo: 'Prime Flix',
